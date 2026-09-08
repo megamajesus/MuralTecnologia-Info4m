@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mural de Tecnologia 2.0</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="limite">
+      <p class="etiqueta">Programação para Internet</p>
+      <h1>Mural de Tecnologia INFO4M </h1>
+      <p class="subtitulo">Consumindo a API pública da Beeceptor e exibindo dados dinamicamente.</p>
+    </div>
+  </header>
+
+  <main class="limite">
+    <section class="painel-controles" aria-labelledby="titulo-controles">
+      <div>
+        <h2 id="titulo-controles">Publicações</h2>
+        <p>Carregue as publicações e pesquise por título, conteúdo ou ID de usuário.</p>
+      </div>
+
+      <div class="controles">
+        <button id="botao-carregar" type="button">Carregar publicações</button>
+        <label class="campo-pesquisa">
+          <span>Pesquisar nas publicações</span>
+          <input id="campo-pesquisa" type="search" placeholder="Ex.: Artificial Intelligence ou 1" disabled>
+        </label>
+      </div>
+    </section>
+
+    <section class="area-resultado" aria-live="polite" aria-busy="false">
+      <p id="mensagem" class="mensagem mensagem--inicial">Clique em “Carregar publicações” para começar.</p>
+      <div id="lista-publicacoes" class="grade-publicacoes"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="limite">Mural de Tecnologia 2.0 • JavaScript, assincronismo e API Beeceptor</div>
+  </footer>
+
+  <script src="js/mural.js"></script>
+</body>
+</html>
